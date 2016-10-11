@@ -5,4 +5,5 @@ interface MyInterface {
     method():void;
     methodWithReturn():number;
     sum(nums:number[]):number;
+    
 }
