@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "name": "TS Debugger",
+      "type": "node",
+      "program": "${workspaceRoot}/main.ts",
+      "outDir": "${workspaceRoot}/output",
+      "stopOnEntry": false,
+      "sourceMaps": true
+    }
+  ]
+}
