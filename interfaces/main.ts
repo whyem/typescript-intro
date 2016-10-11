@@ -1,3 +1,5 @@
+import {MyInterface} from './MyInterface'
+
 let myObj : MyInterface = {
     id: 2,
     name: 'nombre',
