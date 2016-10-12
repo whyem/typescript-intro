@@ -3,7 +3,7 @@ interface ICar {
     move(): void;
 }
 
-class Car implements ICar {
+export class SimpleCar implements ICar {
     distance: number;
     constructor() {
         this.distance = 0;
@@ -12,5 +12,3 @@ class Car implements ICar {
         this.distance += 1;
     }
 }
-
-export {Car}

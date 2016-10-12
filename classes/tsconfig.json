@@ -8,5 +8,6 @@
         "outDir": "dist",
         "sourceMap": true,
         "watch": true
-    }
+    },
+    "compileOnSave": true
 }
