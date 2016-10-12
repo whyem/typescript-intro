@@ -4,7 +4,7 @@
         {
             "name": "TS Debugger",
             "type": "node",
-            "program": "${workspaceRoot}/main.ts",
+            "program": "${workspaceRoot}/src/main.ts",
             "outDir": "${workspaceRoot}/dist",
             "stopOnEntry": false,
             "sourceMaps": true
