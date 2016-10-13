@@ -1,0 +1,14 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "TS Debugger",
+            "program": "${workspaceRoot}/dist/run.js",
+            "outDir": "${workspaceRoot}/dist",
+            "type": "node",
+            "stopOnEntry": false,
+            "sourceMaps": true
+        }
+    ]
+}
+
