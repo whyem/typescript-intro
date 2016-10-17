@@ -3,6 +3,46 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+var Merged;
+(function (Merged) {
+    var name = 'Archivo A';
+    var Door = (function () {
+        function Door(_color) {
+            if (_color === void 0) { _color = 'White'; }
+            this._color = _color;
+        }
+        Object.defineProperty(Door.prototype, "color", {
+            get: function () {
+                return this._color;
+            },
+            set: function (newColor) {
+                this._color = newColor;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        return Door;
+    }());
+    Merged.Door = Door;
+})(Merged || (Merged = {}));
+var Merged;
+(function (Merged) {
+    var name = 'Archivo B';
+    /**
+    * Car
+    */
+    var Car = (function () {
+        function Car(distance) {
+            if (distance === void 0) { distance = 0; }
+            this.distance = distance;
+        }
+        Car.prototype.move = function () {
+            this.distance += 1;
+        };
+        return Car;
+    }());
+    Merged.Car = Car;
+})(Merged || (Merged = {}));
 var MyModule;
 (function (MyModule) {
     var Vehicle = (function () {
@@ -33,6 +73,14 @@ var MyModule;
     MyModule.Car = Car;
 })(MyModule || (MyModule = {}));
 /// <reference path="MyModule.ts" />
+/// <reference path="./A.ts" />
+/// <reference path="./B.ts" />
 var myCar = new MyModule.Car('Mi Auto');
 console.log(myCar.name);
+var car = new Merged.Car(1);
+var door = new Merged.Door('Blanco');
+car.move();
+car.move();
+console.log(car.distance);
+console.log(door.color);
 //# sourceMappingURL=run.js.map
